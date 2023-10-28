@@ -1,22 +1,18 @@
+fig1 = float(input(" Enter your first value: "))
+action1 = input(" Enter Arithmetic action: + - * / ")
+fig2 = float(input(" Enter your second Value: "))
 
 
-# weight = int(input("Enter Your Weight:  "))
-# weight_type = input("(K)g or (L)bs: ")
+if action1 == "+":
+    return1 = fig1 + fig2
+elif action1 == "-":
+    return1 = fig1 - fig2
+elif action1 == "*":
+    return1 = fig1 * fig2
+elif  action1 == "/":
+    return1 = round(fig1 / fig2)
+else:
+    print(" Invalid  Operator   :) ")
 
 
-# if  weight_type.upper() ==  "L" or weight_type == "l":
-#     convert = weight * 0.45
-#     print("Your Weight Is: " + str(convert) + "lbs" )
-# elif weight_type.upper == "K" or weight_type == "k":
-#     #size = weight/2.204
-#     print("Your Weight is: " + str(weight) + "kgs")
-# print("Done")
-
-
-
-i = 1
-
-while i <= 10:
-    print(i * "*")
-    i +=  1
-
+print(" Your  Answer calculation is:", return1)
