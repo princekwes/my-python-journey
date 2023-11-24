@@ -1,0 +1,14 @@
+import pip._vendor.requests  as  reqs
+
+pull = reqs.get( "https://api.github.com/repos/kubernetes/kubernetes/pulls")
+
+complete_detail = pull.json()
+# for i in range(len(complete_detail)):
+#     print(complete_detail[i]["user"]["login"])
+
+
+for i in range(len(complete_detail)):
+     print(complete_detail[i]["user"]["html_url"])
+
+print(type(pull.json()))
+print(pull.status_code)
